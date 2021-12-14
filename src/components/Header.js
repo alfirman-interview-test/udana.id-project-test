@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="w-5/6 mx-auto py-3 flex justify-between items-center">
+    <header className="py-3 flex justify-between items-center">
       <nav>
         <ul className="flex items-center text-sm space-x-10">
           <li>
