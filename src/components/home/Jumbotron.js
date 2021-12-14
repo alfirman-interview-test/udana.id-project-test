@@ -4,7 +4,7 @@ import Wave from "../Wave";
 
 export default function Jumbotron() {
   return (
-    <div
+    <section
       className="h-[700px] text-white bg-cover relative"
       style={{
         backgroundImage: "url('/assets/img/hero-image.jpg')",
@@ -31,6 +31,6 @@ export default function Jumbotron() {
         </div>
       </div>
       <Wave />
-    </div>
+    </section>
   );
 }

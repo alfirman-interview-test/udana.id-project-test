@@ -1,9 +1,9 @@
 export default function HowItWorks() {
   return (
-    <div
-      className="text-gray-900 mt-[180px] bg-no-repeat"
+    <section
+      className="text-gray-900 mt-[80px] py-20 bg-no-repeat"
       style={{
-        backgroundImage: "url('/assets/img/bg-step.png')",
+        backgroundImage: "url('/assets/step/bg-step.png')",
         backgroundPositionX: "1020px",
       }}
     >
@@ -22,14 +22,14 @@ export default function HowItWorks() {
             <li key={step.num} className="flex-1">
               <img
                 className="w-full"
-                src={`/assets/img/step${step.num}.png`}
+                src={`/assets/step/step${step.num}.png`}
                 alt={step.name}
                 height={360}
               />
               <div
                 className="mx-8 mt-5 space-y-3 bg-right bg-no-repeat"
                 style={{
-                  backgroundImage: `url('/assets/img/bg-no${step.num}.png')`,
+                  backgroundImage: `url('/assets/step/bg-no${step.num}.png')`,
                 }}
               >
                 <h4 className="text-2xl font-bold font-ubuntu">{step.title}</h4>
@@ -39,7 +39,7 @@ export default function HowItWorks() {
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 
