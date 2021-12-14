@@ -1,10 +1,12 @@
-import Jumbotron from "./components/Jumbotron";
+import HowItWorks from "./components/home/HowItWorks";
+import Jumbotron from "./components/home/Jumbotron";
 
 function App() {
   return (
-    <div className="min-h-screen font-karla">
+    <main className="min-h-screen font-karla">
       <Jumbotron />
-    </div>
+      <HowItWorks />
+    </main>
   );
 }
 

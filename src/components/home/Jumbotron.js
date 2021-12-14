@@ -1,6 +1,6 @@
 import { ArrowNarrowRightIcon } from "@heroicons/react/outline";
-import Header from "./Header";
-import Wave from "./Wave";
+import Header from "../Header";
+import Wave from "../Wave";
 
 export default function Jumbotron() {
   return (
