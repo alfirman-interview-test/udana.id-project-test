@@ -11,14 +11,20 @@ export default function Header() {
               height={35}
             />
           </li>
-          <li className="font-bold">Waralaba</li>
-          <li className="font-bold">FAQ</li>
-          <li className="font-bold">Tentang</li>
+          <li className="font-bold">
+            <a href="#">Waralaba</a>
+          </li>
+          <li className="font-bold">
+            <a href="#">FAQ</a>
+          </li>
+          <li className="font-bold">
+            <a href="#">Tentang</a>
+          </li>
         </ul>
       </nav>
       <div className="space-x-6 text-sm">
         <button className="font-bold">Masuk</button>
-        <button className="font-bold py-3 px-5 bg-yellow-400 rounded-lg">
+        <button className="font-bold py-3 px-5 bg-yellow-400 hover:bg-yellow-500 duration-500 rounded-lg">
           Mulai Daftar
         </button>
       </div>
