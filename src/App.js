@@ -2,9 +2,9 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="min-h-screen w-screen font-karla overflow-hidden">
+    <div className="min-h-screen font-karla">
       <div
-        className="h-[700px] text-white"
+        className="h-[700px] text-white bg-cover"
         style={{
           backgroundImage: "url('/assets/img/hero-image.jpg')",
         }}
