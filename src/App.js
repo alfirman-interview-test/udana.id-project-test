@@ -1,3 +1,4 @@
+import { ArrowNarrowRightIcon } from "@heroicons/react/outline";
 import Header from "./components/Header";
 
 function App() {
@@ -22,9 +23,10 @@ function App() {
             </p>
             <a
               href="https://udana.id/register"
-              className="mt-10 inline-block py-3 px-5 bg-yellow-400 hover:bg-yellow-500 duration-500 rounded-lg text-xl tracking-wider"
+              className="mt-10 inline-flex items-center space-x-3 py-3 px-5 bg-yellow-400 hover:bg-yellow-500 duration-500 rounded-lg text-lg tracking-wider"
             >
-              Investasi Sekarang
+              <span>Investasi Sekarang</span>
+              <ArrowNarrowRightIcon className="h-6 w-6" strokeWidth={1} />
             </a>
           </div>
         </div>
