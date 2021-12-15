@@ -1,6 +1,6 @@
 # Udana.id
 
-[Visit demo](https://github.com/ezza022/)
+[Visit demo](https://tender-lumiere-e1e16b.netlify.app/)
 
 ## Technologi Used
 - React js
