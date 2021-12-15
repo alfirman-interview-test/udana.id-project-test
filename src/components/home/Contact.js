@@ -24,7 +24,7 @@ export default function Contact() {
               Silahkan menghubungi kami
             </p>
           </div>
-          <div className="flex-[1.5] mt-20">
+          <div className="flex-[1.5] mt-20 lg:mt-0">
             <ul className="space-y-4">
               <li className="flex space-x-3">
                 <LocationMarkerIcon className="h-6 w-6 mt-1" />
