@@ -7,7 +7,7 @@ export default function Jumbotron() {
     <section className="h-[700px] text-white bg-cover relative bg-hero-image-mobile md:bg-hero-image">
       <div className="flex flex-col w-11/12 md:w-[700px] lg:w-5/6 h-full mx-auto">
         <Header />
-        <div className="my-auto md:w-[550px]">
+        <div className="my-auto md:w-[550px] lg:relative -top-10">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold font-ubuntu text-yellow-400">
             Jadilah Investor UMKM & Waralaba
           </h1>
