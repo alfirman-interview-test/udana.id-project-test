@@ -2,7 +2,7 @@ import CardProduct from "../CardProduct";
 
 export default function Latest() {
   return (
-    <section className="mt-20 h-[300vh]">
+    <section className="mt-20">
       <div className="w-5/6 mx-auto">
         <h2 className="text-center text-5xl font-ubuntu font-bold text-gray-900">
           Siap Memulai Berbisnis?
