@@ -22,38 +22,34 @@ export default function FooterNav() {
         <li className="flex-1 space-y-3">
           <h6 className="font-bold text-gray-400">Perusahaan</h6>
           <ul className="text-sm text-gray-800 space-y-2">
-            <li>
-              <a href="#ads">Tentang</a>
-            </li>
-            <li>
-              <a href="#ads">Hubungi Kami</a>
-            </li>
-            <li>
-              <a href="#ads">Syarat & Ketentuan</a>
-            </li>
-            <li>
-              <a href="#ads">Kebijakan Privasi</a>
-            </li>
+            {lists.map((list, i) => (
+              <li key={i}>
+                <a href={list.link}>{list.name}</a>
+              </li>
+            ))}
           </ul>
         </li>
         <li className="flex-1 space-y-3">
           <h6 className="font-bold text-gray-400">Investor</h6>
           <ul className="text-sm text-gray-800 space-y-2">
             <li>
-              <a href="#ads">FAQ</a>
+              <a href="https://udana.id/faq">FAQ</a>
             </li>
             <li>
-              <a href="#ads">Resiko Investasi</a>
+              <a href="https://udana.id/">Resiko Investasi</a>
             </li>
           </ul>
         </li>
         <li className="flex-1 space-y-1">
           <h6 className="font-bold text-gray-400">Social Media</h6>
           <div className="flex space-x-2">
-            <a href="#sad" className="h-5 w-5">
+            <a href="https://www.instagram.com/udanainaja/" className="h-5 w-5">
               <Instagram />
             </a>
-            <a href="#sad" className="h-5 w-5">
+            <a
+              href="https://www.linkedin.com/company/udana-id/"
+              className="h-5 w-5"
+            >
               <LinkedIn />
             </a>
           </div>
@@ -62,27 +58,21 @@ export default function FooterNav() {
           <h6 className="font-bold text-gray-400">Didukung oleh</h6>
           <div className="flex flex-col">
             <div className="flex items-center">
-              <img
-                src="/assets/logo/kominfo.png"
-                alt="kominfo"
-                width={50}
-                height={50}
-              />
-              <img
-                src="/assets/logo/pse.png"
-                alt="pse"
-                width={50}
-                height={50}
-              />
-              <img
-                src="/assets/logo/aludi.png"
-                alt="aludi"
-                width={50}
-                height={50}
-              />
+              {partners.map((partner, i) => (
+                <a key={i} href={partner.link}>
+                  <img
+                    src={partner.image}
+                    alt={partner.image}
+                    width={50}
+                    height={50}
+                  />
+                </a>
+              ))}
             </div>
             <div>
-              <img src="/assets/logo/iso.png" alt="iso" width={"100%"} />
+              <a href="https://www.cbqaglobal.com/validation/company/pt-dana-rintis-indonesia/?cred_referrer_form_id=58">
+                <img src="/assets/logo/iso.png" alt="iso" width={"100%"} />
+              </a>
             </div>
           </div>
         </li>
@@ -90,3 +80,37 @@ export default function FooterNav() {
     </div>
   );
 }
+
+const partners = [
+  {
+    image: "/assets/logo/kominfo.png",
+    link: "https://pse.kominfo.go.id/tdpse-detail/1425",
+  },
+  {
+    image: "/assets/logo/pse.png",
+    link: "https://pse.kominfo.go.id/tdpse-detail/1677",
+  },
+  {
+    image: "/assets/logo/aludi.png",
+    link: "https://aludi.id/",
+  },
+];
+
+const lists = [
+  {
+    name: "Tentang",
+    link: "https://udana.id/about",
+  },
+  {
+    name: "Hubungi Kami",
+    link: "https://udana.id/",
+  },
+  {
+    name: "Syarat & Ketentuan",
+    link: "https://udana.id/tnc",
+  },
+  {
+    name: "Kebijakan Privasi",
+    link: "https://udana.id/privacy",
+  },
+];
