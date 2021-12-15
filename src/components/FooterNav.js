@@ -3,8 +3,8 @@ import LinkedIn from "./icon/LinkedIn";
 
 export default function FooterNav() {
   return (
-    <div className="w-5/6 mx-auto py-10 px-5">
-      <ul className="flex text-xs text-gray-600 space-x-4">
+    <div className="w-11/12 md:w-[700px] lg:w-5/6 mx-auto py-10 px-5">
+      <ul className="lg:flex text-xs text-gray-600 space-y-6 lg:space-y-0 lg:space-x-4">
         <li className="flex-1 flex flex-col items-center space-y-3">
           <img
             src="/assets/logo/udana2.png"
@@ -59,12 +59,11 @@ export default function FooterNav() {
           <div className="flex flex-col">
             <div className="flex items-center">
               {partners.map((partner, i) => (
-                <a key={i} href={partner.link}>
+                <a key={i} href={partner.link} className="inline-block w-full h-full">
                   <img
+                    className="max-w-[100%] h-auto lg:max-w-none lg:h-[50px] lg:w-[50px]"
                     src={partner.image}
                     alt={partner.image}
-                    width={50}
-                    height={50}
                   />
                 </a>
               ))}

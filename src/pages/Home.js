@@ -11,7 +11,7 @@ export default function Home() {
       <HowItWorks />
       <Latest />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }
