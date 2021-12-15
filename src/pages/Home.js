@@ -10,8 +10,8 @@ export default function Home() {
       <Jumbotron />
       <HowItWorks />
       <Latest />
-      {/* <Contact />
-      <Footer /> */}
+      <Contact />
+      {/* <Footer /> */}
     </main>
   );
 }

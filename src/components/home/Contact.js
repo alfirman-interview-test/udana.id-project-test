@@ -8,13 +8,13 @@ export default function Contact() {
   return (
     <section className="mt-20 text-white">
       <div
-        className="w-5/6 mx-auto bg-yellow-400 rounded-3xl bg-no-repeat bg-right"
+        className="w-11/12 md:w-[700px] lg:w-5/6 mx-auto bg-yellow-400 rounded-3xl bg-no-repeat bg-right"
         style={{
           backgroundImage: "url('/assets/img/contact-us-bg.png')",
           boxShadow: "4px 6px 31px 0 rgb(251 205 6 / 25%)",
         }}
       >
-        <div className="flex py-10 px-14 space-x-20 after:flex-1">
+        <div className="lg:flex py-10 px-14 lg:space-x-20 lg:after:flex-1">
           <div className="flex-[1.5]">
             <h3 className="font-ubuntu text-4xl font-bold">
               Kami siap membantu Anda
@@ -24,7 +24,7 @@ export default function Contact() {
               Silahkan menghubungi kami
             </p>
           </div>
-          <div className="flex-[1.5]">
+          <div className="flex-[1.5] mt-20">
             <ul className="space-y-4">
               <li className="flex space-x-3">
                 <LocationMarkerIcon className="h-6 w-6 mt-1" />
