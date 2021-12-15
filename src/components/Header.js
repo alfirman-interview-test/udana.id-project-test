@@ -1,6 +1,11 @@
+import { MenuIcon } from "@heroicons/react/outline";
+import { useState } from "react";
+
 export default function Header() {
+  const [isNavOpened, setNavOpened] = useState(false);
+
   return (
-    <header className="py-4 flex justify-between items-center">
+    <header className="py-4 flex justify-between items-center relative">
       <nav>
         <ul className="flex items-center text-sm space-x-10">
           <li>
@@ -13,17 +18,17 @@ export default function Header() {
               />
             </a>
           </li>
-          <li className="font-bold hidden md:block">
-            <a href="https://udana.id/waralaba">Waralaba</a>
-          </li>
-          <li className="font-bold hidden md:block">
-            <a href="https://udana.id/faq">FAQ</a>
-          </li>
-          <li className="font-bold hidden md:block">
-            <a href="https://udana.id/about">Tentang</a>
-          </li>
+          {lists.map((list, i) => (
+            <li key={i} className="font-bold hidden md:block">
+              <a href={list.link}>{list.name}</a>
+            </li>
+          ))}
         </ul>
       </nav>
+      <MenuIcon
+        onClick={() => setNavOpened(!isNavOpened)}
+        className="h-8 w-8 md:hidden"
+      />
       <div className="space-x-6 text-sm hidden md:block">
         <a href="https://udana.id/login" className="font-bold">
           Masuk
@@ -35,6 +40,44 @@ export default function Header() {
           Mulai Daftar
         </a>
       </div>
+      <div
+        className={`${
+          !isNavOpened ? "hidden" : "block md:hidden"
+        } absolute top-14 left-0 border-t w-full border-gray-600`}
+      >
+        <div className="mt-2 flex flex-wrap bg-neutral-600 py-3 space-y-7">
+          <button className="w-full text-left px-6 font-bold">Masuk</button>
+          <button className="w-full text-center py-3 px-6 font-bold bg-yellow-500 rounded-xl">
+            Mulai Daftar
+          </button>
+        </div>
+        <div className="mt-2 flex flex-wrap bg-neutral-600 p-6 space-y-7">
+          <ul className="space-y-7">
+            {lists.map((list, i) => (
+              <li key={i}>
+                <a href={list.link} className="font-bold">
+                  {list.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </header>
   );
 }
+
+const lists = [
+  {
+    name: "Waralaba",
+    link: "https://udana.id/waralaba",
+  },
+  {
+    name: "FAQ",
+    link: "https://udana.id/faq",
+  },
+  {
+    name: "Tentang",
+    link: "https://udana.id/about",
+  },
+];
