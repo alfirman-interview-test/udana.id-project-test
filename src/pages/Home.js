@@ -1,3 +1,4 @@
+import FooterNav from "../components/FooterNav";
 import Contact from "../components/home/Contact";
 import HowItWorks from "../components/home/HowItWorks";
 import Jumbotron from "../components/home/Jumbotron";
@@ -10,6 +11,13 @@ export default function Home() {
       <HowItWorks />
       <Latest />
       <Contact />
+      <footer className="h-[200vh] mt-5 border-t border-gray-100">
+        <div className="w-5/6 mx-auto py-10 px-5">
+          <FooterNav />
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </footer>
     </main>
   );
 }

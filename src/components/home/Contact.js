@@ -6,10 +6,13 @@ import {
 
 export default function Contact() {
   return (
-    <section className="h-[200vh] mt-20 text-white">
+    <section className="mt-20 text-white">
       <div
         className="w-5/6 mx-auto bg-yellow-400 rounded-3xl bg-no-repeat bg-right"
-        style={{ backgroundImage: "url('/assets/img/contact-us-bg.png')" }}
+        style={{
+          backgroundImage: "url('/assets/img/contact-us-bg.png')",
+          boxShadow: "4px 6px 31px 0 rgb(251 205 6 / 25%)",
+        }}
       >
         <div className="flex py-10 px-14 space-x-20 after:flex-1">
           <div className="flex-[1.5]">

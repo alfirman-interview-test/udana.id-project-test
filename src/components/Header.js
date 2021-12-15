@@ -6,7 +6,7 @@ export default function Header() {
           <li>
             <a href="https://udana.id/">
               <img
-                src="/assets/img/logo.png"
+                src="/assets/logo/udana1.png"
                 alt="logo-udana.id"
                 width={150}
                 height={35}
