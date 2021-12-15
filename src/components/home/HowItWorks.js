@@ -16,7 +16,7 @@ export default function HowItWorks() {
             saja.
           </p>
         </div>
-        <ul className="lg:flex mt-10 space-x-10">
+        <ul className="lg:flex mt-10 lg:space-x-10">
           {steps.map((step) => (
             <li key={step.num} className="flex-1">
               <img
