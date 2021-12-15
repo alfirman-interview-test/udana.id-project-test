@@ -5,6 +5,7 @@ module.exports = {
       backgroundImage: {
         "hero-image": "url('/public/assets/img/hero-image.jpg')",
         "hero-image-mobile": "url('/public/assets/img/hero-image-mobile.jpg')",
+        "step": "url('/public//assets/step/bg-step.png')",
       },
       fontFamily: {
         karla: ["Karla", "sans-serif"],

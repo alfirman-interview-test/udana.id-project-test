@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <main className="min-h-screen font-karla">
       <Jumbotron />
-      {/* <HowItWorks />
-      <Latest />
+      <HowItWorks />
+      {/* <Latest />
       <Contact />
       <Footer /> */}
     </main>

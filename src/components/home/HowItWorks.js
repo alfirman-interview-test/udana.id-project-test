@@ -1,23 +1,22 @@
 export default function HowItWorks() {
   return (
     <section
-      className="text-gray-900 mt-[80px] py-20 bg-no-repeat"
+      className="text-gray-900 mt-[80px] py-20 bg-no-repeat bg-step"
       style={{
-        backgroundImage: "url('/assets/step/bg-step.png')",
         backgroundPositionX: "1020px",
       }}
     >
-      <div className="w-5/6 mx-auto">
-        <div className="flex after:flex-1">
+      <div className="w-11/12 md:w-[700px] lg:w-5/6 mx-auto">
+        <div className="lg:flex after:flex-1">
           <h3 className="text-4xl font-ubuntu font-bold flex-1">
             Menjadi Investor UMKM itu gampang
           </h3>
-          <p className="ml-20 text-xl text-gray-400 flex-1">
+          <p className="mt-6 lg:mt-0 lg:ml-20 text-xl text-gray-400 flex-1">
             Berinvestasi pada UMKM bisa dilakukan oleh siapa saja dan dimana
             saja.
           </p>
         </div>
-        <ul className="flex mt-10 space-x-10">
+        <ul className="lg:flex mt-10 space-x-10">
           {steps.map((step) => (
             <li key={step.num} className="flex-1">
               <img
