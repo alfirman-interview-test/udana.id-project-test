@@ -13,18 +13,18 @@ export default function Header() {
               />
             </a>
           </li>
-          <li className="font-bold">
+          <li className="font-bold hidden md:block">
             <a href="https://udana.id/waralaba">Waralaba</a>
           </li>
-          <li className="font-bold">
+          <li className="font-bold hidden md:block">
             <a href="https://udana.id/faq">FAQ</a>
           </li>
-          <li className="font-bold">
+          <li className="font-bold hidden md:block">
             <a href="https://udana.id/about">Tentang</a>
           </li>
         </ul>
       </nav>
-      <div className="space-x-6 text-sm">
+      <div className="space-x-6 text-sm hidden md:block">
         <a href="https://udana.id/login" className="font-bold">
           Masuk
         </a>

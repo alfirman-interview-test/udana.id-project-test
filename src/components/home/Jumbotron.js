@@ -4,19 +4,14 @@ import Wave from "../Wave";
 
 export default function Jumbotron() {
   return (
-    <section
-      className="h-[700px] text-white bg-cover relative"
-      style={{
-        backgroundImage: "url('/assets/img/hero-image.jpg')",
-      }}
-    >
-      <div className="flex flex-col w-5/6 h-full mx-auto">
+    <section className="h-[700px] text-white bg-cover relative bg-hero-image-mobile md:bg-hero-image">
+      <div className="flex flex-col w-11/12 md:w-[700px] lg:w-5/6 h-full mx-auto">
         <Header />
-        <div className="my-auto w-[550px]">
-          <h1 className="text-6xl font-bold font-ubuntu text-yellow-400">
+        <div className="my-auto md:w-[550px]">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold font-ubuntu text-yellow-400">
             Jadilah Investor UMKM & Waralaba
           </h1>
-          <p className="text-xl mt-8">
+          <p className="md:text-xl mt-8">
             Temukan bisnis UMKM & Waralaba yang anda sukai dan mulai menjadi
             investor untuk kemajuan perekonomian bangsa tanpa perlu pusing
             dengan operasional sehari-hari
